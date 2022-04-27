@@ -6,9 +6,17 @@ hunter_config(
     https://nchc.dl.sourceforge.net/project/boost/boost/1.76.0/boost_1_76_0.tar.bz2"
     SHA1
     8064156508312dde1d834fec3dca9b11006555b6
-    CMAKE_ARGS
+    CMAKE_ARGS ARCH_NATIVE=ON
     CONFIG_MACRO=BOOST_UUID_RANDOM_PROVIDER_FORCE_POSIX
 )
 
-hunter_config(bcos-utilities VERSION 1.0.0-rc1-f12788a1 CMAKE_ARGS HUNTER_PACKAGE_LOG_BUILD=ON HUNTER_PACKAGE_LOG_INSTALL=ON)
-hunter_config(OpenSSL VERSION tassl_1.1.1b_v1.4-63b60292)
+#hunter_config(bcos-utilities VERSION 1.0.0-rc1-f12788a1 CMAKE_ARGS HUNTER_PACKAGE_LOG_BUILD=ON HUNTER_PACKAGE_LOG_INSTALL=ON)
+hunter_config(bcos-utilities
+    VERSION 1.0.0-rc1-f12788a1
+    URL https://${URL_BASE}/bcos-utilities/archive/refs/tags/v1.0.0-rc2.1.tar.gz
+    SHA1 6439b04166b17830511e09a6e28c78f48bdeeaf0
+    CMAKE_ARGS HUNTER_PACKAGE_LOG_BUILD=ON HUNTER_PACKAGE_LOG_INSTALL=ON  URL_BASE=${URL_BASE} ARCH_NATIVE=ON
+)
+
+
+hunter_config(OpenSSL VERSION tassl_1.1.1b_v1.4-63b60292  CMAKE_ARGS ARCH_NATIVE=ON)
