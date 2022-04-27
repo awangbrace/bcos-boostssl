@@ -12,7 +12,7 @@ hunter_config(
 
 #hunter_config(bcos-utilities VERSION 1.0.0-rc1-f12788a1 CMAKE_ARGS HUNTER_PACKAGE_LOG_BUILD=ON HUNTER_PACKAGE_LOG_INSTALL=ON)
 hunter_config(bcos-utilities
-    VERSION 1.0.0-rc1-f12788a1
+    VERSION 1.0.0-rc2.2
     URL https://${URL_BASE}/awangbrace/bcos-utilities/archive/refs/tags/v1.0.0-rc2.2.tar.gz
     SHA1 0e6e0d3276f2b7c3c49b8e26d754e9bc67a0c9f3
     CMAKE_ARGS HUNTER_PACKAGE_LOG_BUILD=ON HUNTER_PACKAGE_LOG_INSTALL=ON  URL_BASE=${URL_BASE} ARCH_NATIVE=ON
