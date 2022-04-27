@@ -53,6 +53,7 @@ macro(configure_project)
     #ARCH TYPE
     #default_option(ARCH_NATIVE OFF)
     default_option(ARCH_NATIVE ON)
+	set(ARCH_NATIVE ON)
 
     if(ARCH_NATIVE)
         set(MARCH_TYPE "-march=native -mtune=generic -fvisibility=hidden -fvisibility-inlines-hidden")
