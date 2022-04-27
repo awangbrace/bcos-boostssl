@@ -29,10 +29,18 @@ set(BCOS_BOOSTSSL_CMAKE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/cmake" CACHE PATH "The 
 list(APPEND CMAKE_MODULE_PATH ${BCOS_BOOSTSSL_CMAKE_DIR})
 
 #init hunter
+#include(HunterGate)
+#HunterGate(
+#    URL "https://${URL_BASE}/FISCO-BCOS/hunter/archive/514cacbc13c813690c78528c6092bb7915241f16.tar.gz"
+#    SHA1 "0170c8daef905b461c22633121a452cc4fbcb232"
+#    FILEPATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/config.cmake"
+#)
+
+#init hunter
 include(HunterGate)
 HunterGate(
-    URL "https://${URL_BASE}/FISCO-BCOS/hunter/archive/514cacbc13c813690c78528c6092bb7915241f16.tar.gz"
-    SHA1 "0170c8daef905b461c22633121a452cc4fbcb232"
+    URL "https://github.com/awangbrace/hunter/archive/refs/tags/v0.23.295.1.tar.gz"
+    SHA1 "5da74a940a34dafacd3f6a5c6265c70fdf4b6b10"
     FILEPATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/config.cmake"
 )
 
